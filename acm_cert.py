@@ -1,3 +1,18 @@
+#How to use 
+#- name: Import new certificate with certificate chain
+#  acm_cert:
+#       Certificate: "{{certificate_key}}"
+#       PrivateKey:  "{{private_key}}"
+#       CertificateChain: "{{certificate_chain}}"
+#Note that I'm passing certificate content from variable.save it in following format plase not the indentation(Space)
+#esscloudplugin_certificate_chain: |  
+#  -----BEGIN CERTIFICATE-----
+#  MIIEtjCCA56gAwIBAgIQDHmpRLCMEZUgkmFf4msdgzANBgkqhkiG9w0BAQsFADBs
+#  MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+#  d3cuZGlnaWNlcnQuY29tMSswKQYDVQQDEyJEaWdpQ2VydCBIaWdoIEFzc3VyYW5j
+#
+
+
 #!/usr/bin/python
 try:
     import boto3
